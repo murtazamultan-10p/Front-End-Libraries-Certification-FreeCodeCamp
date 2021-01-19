@@ -1,0 +1,9 @@
+const JSX = <div>
+  <h1>Complex JSX Element</h1>
+  <p>JSX can represent more complex HTML as well. Nested JSX is that it must return a single element.</p>
+  <ul>
+    <li>List Item 1</li>
+    <li>List Item 2</li>
+    <li>List Item 3</li>
+  </ul>
+</div>
