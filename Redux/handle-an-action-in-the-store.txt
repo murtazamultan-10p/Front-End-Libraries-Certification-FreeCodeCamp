@@ -1,0 +1,22 @@
+const defaultState = {
+  login: false
+};
+
+const reducer = (state = defaultState, action) => {
+
+  // Change code below this line
+  let cloneState = Object.assign({}, state);
+  cloneState.login = true;
+  return action.type === 'LOGIN'? cloneState: state;
+  // Change code above this line
+};
+
+const store = Redux.createStore(reducer);
+
+const loginAction = () => {
+  return {
+    type: 'LOGIN'
+  }
+};
+
+store.dispatch({type: loginAction()});
