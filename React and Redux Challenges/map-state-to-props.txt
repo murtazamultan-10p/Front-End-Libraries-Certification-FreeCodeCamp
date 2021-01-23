@@ -1,0 +1,10 @@
+const state = [];
+
+// Change code below this line
+var mapStateToProps = (state)=>{
+    return {
+        messages: state
+    };
+}
+
+let object = mapStateToProps(state);
